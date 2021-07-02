@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelef.org">
+<head>
+<meta charset="UTF-8">
+<title > Enviar parámetros del request HTTP Get-URL</title>
+</head>
+</head>
+<body>
+	<h1>Enviar parámetros del request HTTP Get-URL</h1>
+	
+	<ul>
+		<li><a th:href="@{/params/string(texto='Hola galle')}">/params/string?texto=Hola galle</a></li>
+		<li><a th:href="@{/params/string(texto='¿Comó estas?')}">/params/string?texto=¿Comó estas?</a></li>
+		<li><a th:href="@{/params/mix-params(saludo='¿Comó estas Victor?', numero=22)}">/params/mix-params?saludo=¿Comó estas Victor?&numero=22</a></li>
+		<li><a th:href="@{/params/mix-params-request(saludo='¿Comó estas Victor?', numero=22)}">/params/mix-params?saludo=¿Comó estas Victor?&numero=22</a></li>
+	</ul>
+</body>
+</html>
